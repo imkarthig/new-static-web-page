@@ -59,6 +59,7 @@ a:focus {
     background-attachment: fixed;
     background-position: cover;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .container-fluid {
