@@ -1506,7 +1506,7 @@ a:focus {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background-image: linear-gradient(to right, #0796fe, #092a49);
+     background-image: linear-gradient(to bottom, #092a49, #0796fe, #092a49);
 }
 }
 
