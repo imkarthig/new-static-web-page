@@ -1,4 +1,7 @@
 
+/*******************************/
+/********* General CSS *********/
+/*******************************/
 body {
     color: #797979;
     background: #ffffff;
@@ -6,9 +9,7 @@ body {
 }
 
 /* this is read more */
-#more {
-    display: none;
-}
+
 
 h1,
 h2,
@@ -19,19 +20,16 @@ h6 {
     color: #092a49;
     font-family: 'Oswald', sans-serif;
 }
-
-.a-more {
+/* .a-more {
     color: #0796fe;
     border: 1px solid#454545;
+} */
 
-}
+    /* .a-more:hover {
+        color: #ffffff;
+        background: #0796fe;
 
-.a-more:hover {
-    color: #ffffff;
-    background: #0796fe;
-
-}
-
+    } */
 a {
     color: #454545;
     transition: .3s;
@@ -52,15 +50,38 @@ a:focus {
 }
 
 .empty-img {
+    /* position: absolute; */
+  width: 100%;
+  height: 100vh;
     
-    width: 100%;
-    height: 100vh;
-    background-image: url('https://i.pinimg.com/originals/ed/c5/d2/edc5d2a73bfdc8e74fd4a9f1e1d64d0a.jpg');
-    background-attachment: fixed;
-    background-position: cover;
+    background-image: url('https://i.pinimg.com/originals/ed/c5/d2/edc5d2a73bfdc8e74fd4a9f1e1d64d0a.jpg'); 
+     background-attachment: fixed;
+    background-position:cover;
     background-size: 100% 100vh;
     background-repeat: no-repeat;
 }
+.empty-img-f
+    {
+        
+      width: 100%;
+      height: 100vh;
+        
+        background-image:url('https://t4.ftcdn.net/jpg/02/46/39/65/360_F_246396555_zBUhqAUMf08DML1YxY6O8iNwnQFoqRNf.jpg'); 
+         background-attachment: fixed;
+        background-position:cover;
+        background-size: 100% 100vh;
+        background-repeat: no-repeat;
+    }
+    .value-details{
+        width: 100%;
+        height: 80vh;
+        background-color: #fff;
+        
+    }
+    .blur-img{
+        
+        opacity:0.7;
+    }
 
 .container-fluid {
     max-width: 100%;
@@ -77,7 +98,7 @@ a:focus {
     font-size: 22px;
     right: 15px;
     bottom: 15px;
-    transition: background 0.5s;
+    transition: background-color 0.5s ease;
     z-index: 9;
 }
 
@@ -141,6 +162,7 @@ a:focus {
     font-size: 14px;
     color: #ffffff;
     margin-right: 5px;
+ 
 }
 
 .top-bar .text h2 {
@@ -201,6 +223,24 @@ a:focus {
     z-index: 999;
 }
 
+.more-menu{
+    display: none;
+    position: absolute;
+    float: right;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    cursor: pointer;
+}
+.finance-menu:hover  .more-menu{
+    display: block;
+  
+    
+}
+ 
+
 .navbar.nav-sticky {
     position: fixed;
     top: 0;
@@ -236,6 +276,7 @@ a:focus {
     color: #0796fe;
     transition: none;
 }
+
 
 .navbar .dropdown-menu {
     margin-top: 0;
@@ -438,6 +479,7 @@ a:focus {
     padding: 0px;
 }
 
+
 #videoModal .close {
     position: absolute;
     width: 30px;
@@ -567,18 +609,22 @@ a:focus {
 /********** Fact CSS ***********/
 /*******************************/
 
-.reveal {
+.reveal{
     position: relative;
     opacity: 0;
+    
 }
 
-.reveal.active {
+.reveal,.active {
     opacity: 1;
 }
 
 .active.fade-left {
     animation: fade-left 1s ease-in;
 }
+
+
+
 
 
 
@@ -632,6 +678,42 @@ a:focus {
 /*******************************/
 /********** About CSS **********/
 /*******************************/
+.fix{
+  
+    background-image: url('https://cdn.elderlawanswers.com/common/uploads/photos/17487-House%20Transfer.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   background-size: 100%;
+   color: #000000;
+  background-blend-mode: darken;
+  z-index: 20;
+  background-blend-mode:lighten;
+  bottom: 0;
+ 
+}
+.sale-fix{
+    background-image: url('https://assets-news.housing.com/news/wp-content/uploads/2020/05/25095350/Everything-you-need-to-know-about-gift-deed-FB-1200x700-compressed.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   background-size: 100%;
+   color: #000000;
+  background-blend-mode: darken;
+  z-index: 20;
+  background-blend-mode:lighten;
+
+}
+.fix-legal{
+    background-image: url("https://assets.website-files.com/5e1872afba9f9eb30deea7ed/5e91d0d665892b28250c0c33_%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B0%D0%BC%D0%B81.svg" );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   background-size: 100%;
+   height: 100%;
+
+  background-blend-mode: darken;
+  z-index: 20;
+  background-blend-mode:lighten;
+  
+}
 .about {
     position: relative;
     width: 100%;
@@ -649,9 +731,6 @@ a:focus {
     height: 100%;
     overflow: hidden;
     transition: .5s;
-}
-.contactForm{
-    text-algin:center;
 }
 
 .about .about-img::after {
@@ -857,9 +936,10 @@ a:focus {
 
 .gird {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto ;
 
 }
+
 
 .feature .col-md-6 {
     height: 100%;
@@ -901,7 +981,8 @@ a:focus {
 @media (max-width: 767.98px) {
     .feature .feature-img {
         margin-bottom: 45px;
-          max-width: 90%;
+        max-width: 90%;
+
     }
 }
 
@@ -1205,6 +1286,7 @@ a:focus {
     box-shadow: 0 0 30px rgba(0, 0, 0, .1);
     z-index: 2;
 }
+.empty-img
 
 .blog .blog-content h2.blog-title {
     font-size: 25px;
@@ -1322,7 +1404,7 @@ a:focus {
 .blog .owl-nav .owl-prev:hover::after {
     background: #092a49;
 }
-
+.empty-img-f
 .blog .owl-nav .owl-next:hover::after {
     background: #092a49;
 }
@@ -1457,46 +1539,6 @@ a:focus {
     list-style-type: none;
 }
 
-
-/*******************************/
-/******* Single Page CSS *******/
-/*******************************/
-.single {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.single img {
-    width: 100%;
-    margin: 0 0 25px 0;
-}
-
-.single .table,
-.single .list-group {
-    margin-bottom: 30px;
-}
-
-.single .ul-group {
-    padding: 0;
-    list-style: none;
-}
-
-.single .ul-group li {
-    margin-left: 2px;
-}
-
-.single .ul-group li::before {
-    position: relative;
-    content: "\f0da";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
-}
-
-.single .ol-group {
-    padding-left: 18px;
-}
 
 
 /*******************************/
