@@ -125,7 +125,7 @@
 })(jQuery);
 //  this is img slide animation 
 function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
+    var reveals = document.querySelectorAll(".reveal",'.revealed');
 
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
@@ -141,21 +141,41 @@ function reveal() {
 }
 window.addEventListener("scroll", reveal);
 
-// this is read more function 
 function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
-      moreText.style.display = "inline";
-    }
+    document.getElementById("myDropdown").classList.toggle("show");
   }
-  //about slide
-  
+   
+  //more 
+//   winows.addEventListerner('scroll',reveal);
+//  function reveal(){
+//  var reveals=document.querySelectorAll('.reveals');
+//  for(var i=0; i<reveals.length;i++){
+//      var windowheight= window.innerHeight;
+//      var revealtop=reveals[i].getBoundingClientRect().top;
+//      var revealpoint=150;
+//      if( revealtop <windowheight - revealpoint){
+// reveals[i].classList.add('actiive')
+
+//      }
+//      else{
+//          reveals[i].classList.remove('active')
+//      }
+//  }
+//   }
+
+//   function reveals() {
+//     var reveals = document.querySelectorAll(".container");
+
+//     for (var i = 0; i < reveals.length; i++) {
+//         var windowHeight = window.innerHeight;
+//         var elementTop = reveals[i].getBoundingClientRect().top;
+//         var elementVisible = 150;
+
+//         if (elementTop < windowHeight - elementVisible) {
+//             reveals[i].classList.add("active");
+//         } else {
+//             reveals[i].classList.remove("active");
+//         }
+//     }
+// }
+// window.addEventListener("scroll", reveal);
