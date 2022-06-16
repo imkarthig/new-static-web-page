@@ -329,6 +329,16 @@ a:focus {
     }
 }
 
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+   
+    left: -100%;
+    margin-top: -1px;
+    
+  }
 
 /*******************************/
 /********** Hero CSS ***********/
