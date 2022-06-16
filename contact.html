@@ -69,22 +69,33 @@
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="nav-item nav-link">HOME</a>
                         <a href="about.html" class="nav-item nav-link">ABOUT US</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">OUR SERVICE</a>
-                            <div class="dropdown-menu">
-                                <a href="feature.html" class="dropdown-item " > FINANCIAL </a>
-                                <a href="" class="dropdown-item  finance-menu"data-toggle="dropdown" onclick="myFunction()">LEGAL</a>
-    
-    
-                                <div class="dropdown-menu more-menu" id="myDropdown">
-                                <a href="property.html" class="  dropdown-item ">PROPERTY</a>
-                                <a href="documentation.html" class="dropdown-item" >DOCUMENTATION</a>
-                                <a href="legal con.html"class="dropdown-item">LEGAL ADVICE</a>
-                                </div>
-    
-                              
-                            </div>
-                        </div>
+                       <div class="dropdown">
+                        <a href="#" id="menu" data-toggle="dropdown" class="nav-item nav-link">OUR SERVICE</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item dropdown-submenu">
+                                <a href="#" data-toggle="dropdown">FINANCIAL</a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#">Item-1</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="dropdown-item dropdown-submenu">
+                                <a href="#" data-toggle="dropdown">LEGAL</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="property.html">PROPERTY</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="property.html">DOCUMENTATION</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="legal con.html">LEGAL ADVICE</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                         <a href="contact.html" class="nav-item nav-link active">CONTACT US</a>
                     </div>
                 </div>
