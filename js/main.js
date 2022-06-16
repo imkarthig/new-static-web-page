@@ -141,9 +141,7 @@ function reveal() {
 }
 window.addEventListener("scroll", reveal);
 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+
    
   //more 
 //   winows.addEventListerner('scroll',reveal);
