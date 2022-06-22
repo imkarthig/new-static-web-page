@@ -28,6 +28,11 @@ body {
     height: auto;
 
 }
+.head{
+    /* font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif; */
+    text-align: justify;
+}
 
 /* @media (min-width: 992px){
     .logo-img{
