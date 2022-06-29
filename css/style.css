@@ -1788,3 +1788,25 @@ a:focus {
         text-align: center;
     }
 }
+
+.fa-whatsapp {
+ 
+    animation: beat 4s infinite;
+  
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.15);
+    }
+
+    40% {
+        transform: scale(1.8);
+    }
+
+
+}
