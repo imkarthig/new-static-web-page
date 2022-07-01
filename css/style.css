@@ -14,20 +14,8 @@ body {
 .c{
     text-align: center;
 }
-
-/* this is read more */
-
 .font-logo {
-    /* background-color: #eeeeee; */
-    font-weight: 600;
-    /* text-shadow: 0 0 2px #fff; */
-
-    /* font-style: italic; */
-    /* letter-spacing: px; */
-    /* padding: 8px;
-   margin: 5px; */
-    /* line-height: 0.6; */
-
+    font-weight: 600; 
 }
 
 .logo-img {
@@ -36,19 +24,10 @@ body {
 
 }
 .head{
-    /* font-family: 'Libre Baskerville', serif;
-    font-family: 'Merriweather', serif; */
     text-align: justify;
 }
 
-/* @media (min-width: 992px){
-    .logo-img{
-      
-     margin-left: 0px;
-        width: 150px;
-        height:70px;
-    }
-} */
+
 .zoom {
     animation: scale 40s linear infinite;
 }
@@ -62,8 +41,7 @@ body {
         transform: scale(1.2);
     }
 }
-
-fact-item h1,
+ h1,
 h2,
 h3,
 h4,
@@ -71,13 +49,12 @@ h5,
 h6 {
     color: #092a49;
     font-family: 'Oswald', sans-serif;
-     text-align: justify;
+    text-align: justify;
 }
 
 .about-text {
     text-align: justify;
 }
-
 
 
 
@@ -701,37 +678,11 @@ a:focus {
 /********** Fact CSS ***********/
 /*******************************/
 
-.reveal {
-    position: relative;
-    opacity: 0;
-
-}
-
-.reveal,
-.active {
-    opacity: 1;
-}
-
-.active.fade-left {
-    animation: fade-left 1s ease-in;
-}
 
 
 
 
 
-
-@keyframes fade-left {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
 .fact {
     position: relative;
@@ -966,26 +917,8 @@ a:focus {
     border-color: #1d2434;
 }
 
-/* about slide */
 
-/* .ul-gird {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
-    align-items: center;
-    gap: 10px;
-}
-
-.hover-back {
-    box-shadow: 0 0 50px rgb(179, 178, 178);
-}
-
-.hover-back:hover {
-
-    background-color: rgb(255, 255, 255);
-} */
 #slideset1 {
-    /* height: 10em; */
-    /* position: relative */
     text-align: center;
 }
 
@@ -1043,6 +976,7 @@ a:focus {
 
 .feature .col-md-6 {
     height: 100%;
+    text-align: justify;
 }
 
 .feature .feature-img {
@@ -1797,6 +1731,7 @@ a:focus {
     }
 }
 
+
 .fa-whatsapp {
  
     animation: beat 4s infinite;
@@ -1818,3 +1753,4 @@ a:focus {
 
 
 }
+
