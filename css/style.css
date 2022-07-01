@@ -7,6 +7,9 @@ body {
     background: #ffffff;
     font-family: 'Lato', sans-serif;
 }
+.section-header p{
+    text-align: justify;
+}
 
 /* this is read more */
 
@@ -64,6 +67,7 @@ h5,
 h6 {
     color: #092a49;
     font-family: 'Oswald', sans-serif;
+     text-align: justify;
 }
 
 .about-text {
